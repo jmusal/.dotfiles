@@ -125,7 +125,8 @@ endif
 "====================================================
 syntax on
 "colorscheme monakai
-colorscheme anderson
+"colorscheme anderson
+colorscheme cobalt2
 set t_Co=256
 
 "====================================================
@@ -171,6 +172,8 @@ function SetMarkdownOptions()
     execute 'b '.bufnr
   endif
 endfunction
+
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
 
 augroup pencil
   autocmd!
