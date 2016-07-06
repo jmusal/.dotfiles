@@ -16,7 +16,7 @@ antigen bundle chrissicool/zsh-256color
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
 # # Load the theme.
-antigen theme wesbos/Cobalt2-iterm cobalt2.zsh-theme
+antigen theme DoctorJellyface/agnoster-zsh-theme agnoster.zsh-theme --branch=patch-1
 
 # # Tell antigen that you're done.
 antigen apply
@@ -48,8 +48,7 @@ function md2word () {
 } 
 
 
-#BULLETTRAIN_NVM_SHOW=true
-#BULLETTRAIN_RUBY_SHOW=false
-#BULLETTRAIN_EXEC_TIME_SHOW=true
-#BULLETTRAIN_NVM_FG="black"
-#BULLETTRAIN_TIME_SHOW=false
+# WP-CLI Bash completions
+autoload bashcompinit
+bashcompinit
+source $HOME/.wp-completition.bash
