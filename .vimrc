@@ -127,7 +127,8 @@ endif
 syntax on
 "colorscheme monakai
 "colorscheme anderson
-colorscheme cobalt2
+colorscheme solarized
+set background=light
 set t_Co=256
 
 "====================================================
