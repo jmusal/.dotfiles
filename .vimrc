@@ -33,6 +33,7 @@ Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'ap/vim-css-color'
 Plugin 'jelera/vim-javascript-syntax'     " js syntax
 Plugin 'mxw/vim-jsx'
+Plugin 'airblade/vim-gitgutter.git'
 
 
 "====================================================
