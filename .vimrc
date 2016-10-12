@@ -131,6 +131,12 @@ colorscheme solarized
 set background=light
 set t_Co=256
 
+if $ITERM_PROFILE=="inside"
+  colorscheme cobalt2
+elseif $ITERM_PROFILE=="outside"
+  colorscheme PaperColor 
+endif
+
 "====================================================
 " Key Mappings
 "====================================================

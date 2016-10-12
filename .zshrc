@@ -1,9 +1,6 @@
 source ~/dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
 
-# Load the oh-my-zsh's library.
-# antigen use oh-my-zsh
-
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle heroku
@@ -16,7 +13,7 @@ antigen bundle chrissicool/zsh-256color
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
 # # Load the theme.
-antigen theme DoctorJellyface/agnoster-zsh-theme agnoster.zsh-theme --branch=patch-1
+antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
 # # Tell antigen that you're done.
 antigen apply
@@ -52,3 +49,10 @@ function md2word () {
 autoload bashcompinit
 bashcompinit
 source $HOME/.wp-completition.bash
+
+im() { 
+  echo -e "\033]50;SetProfile=$1\a" 
+  export ITERM_PROFILE=$1
+}
+
+export PATH=~/bin:$PATH
