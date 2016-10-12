@@ -16,6 +16,7 @@ clean_vim:
 	rm -Rf ~/.vimrc
 	rm -Rf ~/.vim/bundle/
 	rm -Rf ~.vim
+	rm -Rf `pwd`/.vim/bundle/Vundle.vim
 
 install_zsh: clean_zsh
 	curl https://cdn.rawgit.com/zsh-users/antigen/v1.2.0/bin/antigen.zsh > `pwd`/antigen.zsh

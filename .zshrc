@@ -1,4 +1,4 @@
-source ~/dotfiles/antigen/antigen.zsh
+source ~/.dotfiles/antigen.zsh
 antigen use oh-my-zsh
 
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
@@ -49,7 +49,7 @@ function md2word () {
 # WP-CLI Bash completions
 autoload bashcompinit
 bashcompinit
-source $HOME/.wp-completition.bash
+source $HOME/.dotfiles/scripts/wp-completion.bash
 
 im() { 
   echo -e "\033]50;SetProfile=$1\a" 
