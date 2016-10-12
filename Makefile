@@ -18,6 +18,7 @@ clean_vim:
 	rm -Rf ~.vim
 
 install_zsh: clean_zsh
+	curl https://cdn.rawgit.com/zsh-users/antigen/v1.2.0/bin/antigen.zsh > `pwd`/antigen.zsh
 	ln -sf `pwd`/.zshrc ~/.zshrc
 
 clean_zsh:
