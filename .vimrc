@@ -20,7 +20,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-rails.git'              " rails powerup
 Plugin 'Lokaltog/vim-easymotion'          " Vim Jumping Motions
 Plugin 'altercation/vim-colors-solarized' " Solarized Colors
-Plugin 'rking/ag.vim'                     " Adding Silver Searcher - note this must also be installed on the system
 Plugin 'moll/vim-node'                    " b
 Plugin 'scrooloose/syntastic.git'
 Plugin 'tyru/open-browser.vim.git'        " Open Links in browser
