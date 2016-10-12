@@ -16,3 +16,9 @@ clean_vim:
 	rm -Rf ~/.vimrc
 	rm -Rf ~/.vim/bundle/
 	rm -Rf ~.vim
+
+install_zsh: clean_zsh
+	ln -sf `pwd`/.zshrc ~/.zshrc
+
+clean_zsh:
+	rm -Rf ~/.zshrc
