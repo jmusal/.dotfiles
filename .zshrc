@@ -2,6 +2,7 @@ source ~/dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle history-substring-search 
 antigen bundle git
 antigen bundle heroku
 antigen bundle pip
