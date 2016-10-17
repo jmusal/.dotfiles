@@ -11,7 +11,11 @@ antigen bundle command-not-found
 antigen bundle chrissicool/zsh-256color
 
 # # Syntax highlighting bundle.
-#antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+## history seasrch
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
 
 # # Load the theme.
 antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
