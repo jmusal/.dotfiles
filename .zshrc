@@ -2,7 +2,6 @@ source ~/.dotfiles/antigen.zsh
 antigen use oh-my-zsh
 
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle history-substring-search 
 antigen bundle git
 antigen bundle heroku
 antigen bundle pip
@@ -15,7 +14,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 ## history seasrch
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-autosuggestions
 
 # # Load the theme.
 antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
