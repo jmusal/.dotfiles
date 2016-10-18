@@ -25,7 +25,7 @@ Plugin 'scrooloose/syntastic.git'
 Plugin 'tyru/open-browser.vim.git'        " Open Links in browser
 Plugin 'kien/ctrlp.vim.git'               " Fuzzy file, buffer, mru, tag, etc finder.
 Plugin 'StanAngeloff/php.vim.git'         " Up-to-date PHP syntax file (5.3–5.6 support)
-Plugin 'ervandew/supertab.git'            " Perform all your vim insert mode completions with Tab
+"Plugin 'ervandew/supertab.git'            " Perform all your vim insert mode completions with Tab
 Plugin 'shawncplus/phpcomplete.vim'       " Improved PHP omnicompletion
 Plugin 'dsawardekar/wordpress.vim'        " Vim Plugin for WordPress Development
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
@@ -33,7 +33,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'jelera/vim-javascript-syntax'     " js syntax
 Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter.git'
-
+Plugin 'SirVer/ultisnips'
 
 "====================================================
 " Status Line
