@@ -24,3 +24,5 @@ install_zsh: clean_zsh
 
 clean_zsh:
 	rm -Rf ~/.zshrc
+
+install: install_vim install_zsh
