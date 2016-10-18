@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+#
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.dotfiles/oh-my-zsh
 
@@ -52,21 +52,22 @@ plugins=(git, history-substring-search, command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
- #Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='vim'
- fi
+#Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+  eval "$(rbenv init -)"
+
+  source $(brew --prefix nvm)/nvm.sh
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+  export EDITOR='vim'
+fi
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-eval "$(rbenv init -)"
-
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 #==========================
 # Pandoc to create word files from markdown
