@@ -6,7 +6,7 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 
 ZSH_THEME="bullet-train"
 ZSH_CUSTOM=~/.dotfiles/oh-my-zsh-custom
-plugins=(git, history-substring-search, command-not-found)
+plugins=(vi-mode git npm osx zsh-syntax-highlighting history-substring-search command-not-found)
 source $ZSH/oh-my-zsh.sh
 
 if [[ -n $SSH_CONNECTION ]]; then
@@ -21,7 +21,9 @@ else
 fi
 
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-bindkey -v
+# bindkey -v
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 #==========================
 # Pandoc to create word files from markdown
