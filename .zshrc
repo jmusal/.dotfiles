@@ -53,3 +53,14 @@ im() {
 }
 
 export PATH=~/bin:$PATH
+
+
+export GOPATH=$HOME/web/go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$HOME/.composer/vendor/bin
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+alias rn='react-native'
